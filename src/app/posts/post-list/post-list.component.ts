@@ -11,12 +11,6 @@ import { Subscription } from 'rxjs';
 })
 export class PostListComponent implements OnInit, OnDestroy {
 
-  /*
-   posts = [
-    {title: 'Primer post', content: 'este es el primer post'},
-    {title: 'Second post', content: 'este es el segundo post'},
-    {title: 'Third post', content: 'este es el tercero post'}
-   ]  */
   posts: Post[] = [];
   isLoading = false;
   totalPosts = 0;

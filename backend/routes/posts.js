@@ -75,7 +75,7 @@ router.get('',(req, res, next) => {
   postQuery
     .then((documents) => {
       fetchedPosts = documents;
-      return Post.count();  // si hacemos un return en un then block, estamos creando otra promesa
+      return Post.countDocuments();  // si hacemos un return en un then block, estamos creando otra promesa
     })
     .then(count => {
       res.status(200).json({
